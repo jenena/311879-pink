@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Евгения Орлова](https://up.htmlacademy.ru/adaptive/13/user/311879).
-* Наставник: `Неизвестно`.
+* Наставник: Анна Лисененкова.
 
 ---
 
