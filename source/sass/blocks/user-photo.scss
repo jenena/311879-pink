@@ -1,0 +1,23 @@
+.user-photo__wrapper {
+  background-color: $light-grey;
+
+  color: $navy;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.user-photo__user-name {
+  font-weight: 700;
+}
+
+.user-photo__time {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.user-photo__likes {
+  color: $pink;
+  font-size: 12px;
+}

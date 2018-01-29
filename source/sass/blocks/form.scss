@@ -1,0 +1,79 @@
+.form {
+  background-color: #ffffff;
+
+  color: $navy;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.form__field-label {
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.form__field {
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+
+  font-size: 18px;
+
+  &:hover {
+    border-color: $navy;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $pink;
+    outline: none;
+  }
+}
+
+.form__legend {
+  color: $pink;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__check-label {
+  font-size: 18px;
+}
+
+.form__textarea {
+  font-size: 18px;
+}
+
+.form__submit-button {
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 2px;
+
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Open Sans", "Arial", sans-serif;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    background-color: #1c9b5e;
+
+    color: rgba(#ffffff, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}
+
+.form__required-field {
+  text-transform: uppercase;
+}
+
+.form__asterisk {
+  color: $pink;
+}

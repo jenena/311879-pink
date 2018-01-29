@@ -1,0 +1,38 @@
+.contacts {
+  text-align: center;
+
+  background-color: #ffffff;
+}
+
+.contacts__caption {
+  color: $navy;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.contacts__title {
+  color: $navy;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.contacts__link,
+.contacts__adress {
+  color: $pink;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+  color: $navy;
+}
+
+.contacts__link:active {
+  color: rgba($navy, 0.3);
+  text-decoration: none;
+}

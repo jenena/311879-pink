@@ -1,0 +1,33 @@
+.download {
+  text-align: center;
+
+  background-color: $dark-navy;
+}
+
+.download__button {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $pink;
+  }
+
+  &:active {
+    color: rgba($pink, 0.3);
+  }
+}
+
+.download__os-list {
+  list-style: none;
+}
+
+.download__descriprion {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+}
