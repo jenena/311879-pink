@@ -1,0 +1,24 @@
+.site-list {
+  background-color: $navy;
+
+  list-style: none;
+
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.site-list__link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.site-list__link:hover,
+.site-list__link:focus {
+  color: $pink;
+}
+
+.site-list__link:active {
+  color: rgba($pink, 0.3);
+}

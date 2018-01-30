@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+  font-weight: 300;
+}
+
+@import "visually-hidden.scss";
+@import "variables.scss";
+@import "blocks/contacts.scss";
+@import "blocks/copyright.scss";
+@import "blocks/download.scss";
+@import "blocks/form.scss";
+@import "blocks/info.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/price.scss";
+@import "blocks/reviews.scss";
+@import "blocks/site-list.scss";
+@import "blocks/social.scss";
+@import "blocks/toggles.scss";
+@import "blocks/upload.scss";
+@import "blocks/user-photo.scss";
+
+body {
+  margin: 0;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}

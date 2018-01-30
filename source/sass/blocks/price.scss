@@ -1,0 +1,33 @@
+.price {
+  background-color: $light-grey;
+}
+
+.price__list {
+  text-transform: uppercase;
+}
+
+.price__header {
+  background-color: $navy;
+
+  color: #ffffff;
+  line-height: 30px;
+}
+
+.price__name {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.price__value {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.price__feature {
+  background-color: #ffffff;
+
+  color: $navy;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400px;
+}

@@ -1,0 +1,51 @@
+.upload__button {
+  width: 280px;
+  height: 55px;
+
+  background-color: #ffffff;
+  border: 3px solid;
+  border-radius: 27px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.upload__button--post {
+  border-color: $pink;
+
+  color: $pink;
+
+  &:hover,
+  &:focus {
+    background-color: $pink;
+
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: $pink;
+
+    color: rgba(#ffffff, 0.3);
+  }
+}
+
+.upload__button--cancel {
+  border-color: rgba($navy, 0.1);
+
+  color: rgba($navy, 0.1);
+
+  &:hover,
+  &:focus {
+    border-color: rgba($navy, 0.3);
+
+    color: rgba($navy, 0.3);
+  }
+
+  &:active {
+    background-color: rgba($navy, 0.3);
+    border-color: transparent;
+
+    color: rgba(#ffffff, 0.3);
+  }
+}
