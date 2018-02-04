@@ -1,10 +1,24 @@
+.user-photo {
+  margin: 0 auto;
+  width: 320px;
+  text-align: center;
+}
+
 .user-photo__wrapper {
+  display: flex;
+  flex-direction: column;
   background-color: $light-grey;
 
   color: $navy;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+}
+
+.user-photo__container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 .user-photo__user-name {
@@ -20,4 +34,39 @@
 .user-photo__likes {
   color: $pink;
   font-size: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .user-photo {
+    width: 660px;
+  }
+
+  .user-photo__wrapper--panorama {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .user-photo__text--panorama {
+    order: 2;
+  }
+
+  .user-photo__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .user-photo__post {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .user-photo {
+    width: 1200px;
+  }
+
+  .user-photo__container {
+    padding: 0 120px;
+  }
 }

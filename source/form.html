@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Конкурс</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -28,15 +30,17 @@
         </ul>
       </nav>
     </header>
-    <main class="page-main">
-      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <section class="form">
-        <h2 class="visually-hidden">Форма</h2>
-        <p class="form__title">
-          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-        </p>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__fieldset form__fieldset--white">
+    <section class="page-main">
+      <h2 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+    </section>
+    <section class="form">
+      <h2 class="visually-hidden">Форма</h2>
+      <p class="form__title">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+      </p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="form__container">
+          <fieldset class="form__fieldset form__fieldset--small">
             <label class="form__field-label" for="surname">Фамилия:</label>
             <input class="form__field" id="surname" type="text" name="surname" placeholder="Укажите фамилию *" required>
             <label class="form__field-label" for="name">Имя:</label>
@@ -44,7 +48,7 @@
             <label class="form__field-label" for="patronymic">Отчество:</label>
             <input class="form__field" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--grey">
+          <fieldset class="form__fieldset form__fieldset--achievements form__fieldset--grey">
             <legend class="form__legend">
               Ваши безбашенные достижения в путешествии
             </legend>
@@ -61,13 +65,13 @@
             <input class="form__checkbox" type="checkbox"  name="hotel" id="hotel">
             <label class="form__check-label" for="hotel">Разгромил отель</label>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--white">
+          <fieldset class="form__fieldset form__fieldset--contacts">
             <label class="form__field-label" for="phone">Номер телефона</label>
             <input class="form__field" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
             <label class="form__field-label" for="email">Адрес почты</label>
             <input class="form__field" id="email" type="email" name="email" placeholder="Введите почту *" required>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--grey">
+          <fieldset class="form__fieldset form__fieldset--grey form__fieldset--small">
             <legend class="form__legend">
               С каким приложением путешествовали?
             </legend>
@@ -78,15 +82,17 @@
             <input type="radio" name="app" value="windows" id="windows">
             <label class="form__check-label" for="windows">Windows Phone</label>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--white">
+          <fieldset class="form__fieldset form__fieldset--emotions">
             <label class="form__legend" for="story">Опишите свои эмоции</label>
             <textarea class="form__textarea" id="story" name="story">Можно прям в красках, не стесняясь в выражениях</textarea>
           </fieldset>
+        </div>
+        <div class="form__wrapper">
           <input class="form__submit-button" type="submit" value="Отправить форму">
-        </form>
-        <p class="form__required-field"><span class="form__asterisk">*</span> — обязательные поля</p>
-      </section>
-    </main>
+          <p class="form__required-field"><span class="form__asterisk">*</span> — обязательные поля</p>
+        </div>
+      </form>
+    </section>
     <footer class="page-footer">
       <a class="page-footer__logo">
         <img class="page-footer__logo-image" src="http://placehold.it/150x40" width="150" height="40" alt="Pink">

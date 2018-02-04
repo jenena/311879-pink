@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Фотографии</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -28,26 +30,31 @@
         </ul>
       </nav>
     </header>
-    <main class="page-main">
-      <h1 class="page-main__title">Фотографии пользователей</h1>
-      <section class="user-photo">
-        <h2 class="visually-hidden">Фотографии</h2>
-        <div class="user-photo__post">
-          <img class="user-photo__image user-photo__image--panorama" src="http://placehold.it/320x135" width="320" height="135" alt="Фотография пользователя Анна">
-          <div class="user-photo__wrapper">
-            <p class="user-photo__title">
-              <b class="user-photo__user-name">Анна</b>
-              <span class="user-photo__time">(5 минут назад)</span>
-            </p>
-            <p class="user-photo__text">
-              Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-            </p>
-            <p class="user-photo__likes">
-              <button class="user-photo__like-button" type="button">Нравится</button>
-              <span>Нравится: 215</span>
-            </p>
-          </div>
+    <section class="page-main">
+      <h2 class="page-main__title">Фотографии пользователей</h2>
+    </section>
+    <section class="user-photo">
+      <h2 class="visually-hidden">Фотографии</h2>
+      <div class="user-photo__slogan">
+        Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+      </div>
+      <div class="user-photo__panorama">
+        <img class="user-photo__image user-photo__image--panorama" src="http://placehold.it/320x135" width="320" height="135" alt="Фотография пользователя Анна">
+        <div class="user-photo__wrapper user-photo__wrapper--panorama">
+          <p class="user-photo__title">
+            <b class="user-photo__user-name">Анна</b>
+            <span class="user-photo__time">(5 минут назад)</span>
+          </p>
+          <p class="user-photo__text user-photo__text--panorama">
+            Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+          </p>
+          <p class="user-photo__likes">
+            <button class="user-photo__like-button" type="button">Нравится</button>
+            <span>Нравится: 215</span>
+          </p>
         </div>
+      </div>
+      <div class="user-photo__container">
         <div class="user-photo__post">
           <img class="user-photo__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя Левон">
           <div class="user-photo__wrapper">
@@ -144,25 +151,29 @@
             </p>
           </div>
         </div>
-      </section>
-      <section class="upload">
-        <h2 class="visually-hidden">Загрузка фото</h2>
-        <p class="upload__title">
-          Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!
-        </p>
+      </div>
+    </section>
+    <section class="upload">
+      <h2 class="visually-hidden">Загрузка фото</h2>
+      <div class="upload__title">
+        Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!
+      </div>
+      <div class="upload__container">
         <img class="upload__image" src="http://placehold.it/280x375" width="280" height="375" alt="Загружаемая фотография">
-        <div class="upload__effect-wrapper">
-          <button class="upload__effect-button upload__effect-button--crop upload__effect-button--active" type="button">Обрезать</button>
-          <button class="upload__effect-button upload__effect-button--fill" type="button">Заполнить</button>
-          <button class="upload__effect-button upload__effect-button--contrast" type="button">Контраст</button>
+        <div class="upload__wrapper">
+          <div class="upload__effect-wrapper">
+            <button class="upload__effect-button upload__effect-button--crop upload__effect-button--active" type="button">Обрезать</button>
+            <button class="upload__effect-button upload__effect-button--fill" type="button">Заполнить</button>
+            <button class="upload__effect-button upload__effect-button--contrast" type="button">Контраст</button>
+          </div>
+          <input class="upload__scale" type="range" min="1" max="10">
+          <div class="upload__button-wrapper">
+            <button class="upload__button upload__button--post" type="button">Запостить</button>
+            <button class="upload__button upload__button--cancel" type="button">Отмена</button>
+          </div>
         </div>
-        <input class="upload__scale" type="range" min="1" max="10">
-        <div class="upload__button-wrapper">
-          <button class="upload__button upload__button--post" type="button">Запостить</button>
-          <button class="upload__button upload__button--cancel" type="button">Отмена</button>
-        </div>
-      </section>
-    </main>
+      </div>
+    </section>
     <footer class="page-footer">
       <a class="page-footer__logo">
         <img class="page-footer__logo-image" src="http://placehold.it/150x40" width="150" height="40" alt="Pink">

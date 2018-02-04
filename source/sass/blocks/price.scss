@@ -1,13 +1,29 @@
 .price {
+  margin: 0 auto;
+  text-align: center;
+
   background-color: $light-grey;
 }
 
 .price__list {
+  margin: 0 auto;
+  width: 836px;
   text-transform: uppercase;
+
+  border-collapse: collapse;
+}
+
+.price__row-name {
+  display: none;
+
+  border: 2px solid $light-grey;
 }
 
 .price__header {
+  width: 276px;
   background-color: $navy;
+
+  border: 2px solid $light-grey;
 
   color: #ffffff;
   line-height: 30px;
@@ -24,10 +40,53 @@
 }
 
 .price__feature {
+  width: 276px;
   background-color: #ffffff;
+
+  border: 2px solid $light-grey;
 
   color: $navy;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400px;
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    width: 660px;
+  }
+
+  .price__list {
+    width: auto;
+  }
+
+  .price__row-name {
+    display: table-cell;
+  }
+
+  .price__header {
+    width: 154px;
+  }
+
+  .price__feature {
+    width: 154px;
+  }
+
+  .price__feature-name {
+    display: none;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .price {
+    width: 1200px;
+  }
+
+  .price__header {
+    width: 235px;
+  }
+
+  .price__feature {
+    width: 235px;
+  }
 }

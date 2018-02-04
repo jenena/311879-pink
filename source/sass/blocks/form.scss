@@ -1,10 +1,21 @@
 .form {
+  margin: 0 auto;
+  width: 320px;
   background-color: #ffffff;
 
   color: $navy;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
+}
+
+.form__title {
+  text-align: center;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .form__field-label {
@@ -43,6 +54,10 @@
   font-size: 18px;
 }
 
+.form__fieldset--emotions {
+  order: 5;
+}
+
 .form__submit-button {
   background-color: #2aab6d;
   border: none;
@@ -76,4 +91,45 @@
 
 .form__asterisk {
   color: $pink;
+}
+
+@media (max-width: $tablet-width) {
+  .form__fieldset--grey {
+    background-color: $light-grey;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    width: 660px;
+  }
+
+  .form__fieldset--achievements {
+    order: 4;
+  }
+
+  .form__fieldset--contacts {
+    order: 3;
+  }
+
+  .form__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .form {
+    width: 1200px;
+  }
+
+  .form__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__fieldset--small {
+    width: 470px;
+  }
 }
