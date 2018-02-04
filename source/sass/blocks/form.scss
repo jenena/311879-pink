@@ -93,7 +93,7 @@
   color: $pink;
 }
 
-@media (max-width: $tablet-width){
+@media (max-width: $tablet-width) {
   .form__fieldset--grey {
     background-color: $light-grey;
   }
