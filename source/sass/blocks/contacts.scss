@@ -1,4 +1,6 @@
 .contacts {
+  margin: 0 auto;
+  width: 320px;
   text-align: center;
 
   background-color: #ffffff;
@@ -9,6 +11,17 @@
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
+}
+
+.contacts__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.contacts__wrapper {
+  margin: 0;
 }
 
 .contacts__title {
@@ -35,4 +48,25 @@
 .contacts__link:active {
   color: rgba($navy, 0.3);
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: 660px;
+  }
+
+  .contacts__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .contacts {
+    width: 1200px;
+  }
+
+  .contacts__wrapper--last {
+    order: 2;
+  }
 }

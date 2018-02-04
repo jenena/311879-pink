@@ -1,4 +1,6 @@
 .info {
+  margin: 0 auto;
+  width: 320px;
   background-color: #ffffff;
 
   text-align: center;
@@ -11,10 +13,20 @@
   font-weight: 300;
 }
 
-.info__list {
-  list-style: none;
+.info__wrapper {
+  margin: 0;
+  padding: 0;
 
   background-color: $light-grey;
+}
+
+.info__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .info__title {
@@ -29,4 +41,81 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+}
+
+.info__effect {
+  display: none;
+  margin: 0;
+}
+
+.info__effect-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.info__effect-title {
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.info__learn {
+  color: $pink;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+@media (min-width: $tablet-width) {
+  .info {
+    width: 660px;
+  }
+
+  .info__effect {
+    display: flex;
+    flex-direction: row;
+
+    &::before {
+      content: "";
+
+      display: block;
+      width: 300px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desctop-width) {
+  .info__wrapper {
+    display: flex;
+    flex-direction: row;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 300px;
+    }
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .info {
+    width: 1200px;
+  }
+
+  .info__list {
+    flex-direction: row;
+  }
+
+  .info__item {
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+      content: "";
+
+      height: 301px;
+    }
+  }
 }

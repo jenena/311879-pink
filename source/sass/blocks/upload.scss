@@ -1,3 +1,15 @@
+.upload {
+  margin: 0 auto;
+  width: 320px;
+  text-align: center;
+
+  background-color: $light-grey;
+}
+
+.upload__title {
+  background-color: #ffffff;
+}
+
 .upload__button {
   width: 280px;
   height: 55px;
@@ -47,5 +59,22 @@
     border-color: transparent;
 
     color: rgba(#ffffff, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .upload {
+    width: 660px;
+  }
+
+  .upload__container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .upload {
+    width: 1200px;
   }
 }
