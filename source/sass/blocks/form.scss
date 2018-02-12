@@ -48,7 +48,7 @@
   }
 }
 
-.form__achievements-extra-wrapper:last-of-type .form__checkbox-wrapper:last-of-type{
+.form__achievements-extra-wrapper:last-of-type .form__checkbox-wrapper:last-of-type {
   margin-bottom: 46px;
 }
 
@@ -242,7 +242,8 @@
     }
 
     &--contacts {
-      padding: 0 0 56px;
+      order: 3;
+      padding: 0;
       margin: 0 20px 58px;
     }
 
@@ -250,11 +251,6 @@
       order: 4;
       margin: 0 20px 58px;
       padding: 0;
-    }
-
-    &--contacts {
-      order: 3;
-      padding-bottom: 0;
     }
 
     &--emotions {
@@ -361,7 +357,6 @@
   }
 
   .form__fieldset {
-
     &--small {
       margin: 0;
       padding: 0;
@@ -401,21 +396,18 @@
   }
 
   .form__legend {
-
     &--contacts {
       margin-bottom: 28px;
     }
   }
 
   .form__field {
-
     &--contacts {
       width: 350px;
     }
   }
 
   .form__field-wrapper {
-
     &--contacts {
       padding: 0;
       margin-bottom: 12px;

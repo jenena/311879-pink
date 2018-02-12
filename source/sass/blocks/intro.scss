@@ -4,13 +4,13 @@
 
   background-color: $navy;
   background-image: url("../img/iphone-hand-mobile@1x.png"),
-                    url("../img/bg-back-mobile@1x.jpg");
+    url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat,
-                      no-repeat;
+    no-repeat;
   background-size: auto,
-                    320px;
+    320px;
   background-position: 0 178px,
-                        50% 0;
+    50% 0;
 }
 
 .intro__slogan {
@@ -39,13 +39,13 @@
     min-height: 529px;
 
     background-image: url("../img/iphone-hand-mobile@1x.png"),
-                      url("../img/bg-back-mobile@1x.jpg");
+      url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat,
-                        no-repeat;
+      no-repeat;
     background-size: 470px,
-                      660px;
+      660px;
     background-position: 170px 210px,
-                          50% 50%;
+      50% 50%;
   }
 
   .intro__slogan {

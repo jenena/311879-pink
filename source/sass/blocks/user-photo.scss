@@ -198,23 +198,23 @@
   }
 
   // временно пока нет графики
-    .user-photo__image {
-      width: 300px;
-      height: 300px;
+  .user-photo__image {
+    width: 300px;
+    height: 300px;
 
-      &--panorama {
-        height: 509px;
-        width: 100%;
-      }
+    &--panorama {
+      height: 509px;
+      width: 100%;
     }
+  }
 
-    .user-photo__text {
-      padding-right: 28px;
+  .user-photo__text {
+    padding-right: 28px;
 
-      &--panorama {
-        order: 2;
-      }
+    &--panorama {
+      order: 2;
     }
+  }
 }
 
 @media (min-width: $desctop-width) {
@@ -242,7 +242,6 @@
   }
 
   .user-photo__wrapper {
-
     &--panorama {
       width: 940px;
       min-height: 68px;
