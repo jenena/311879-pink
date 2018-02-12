@@ -1,5 +1,6 @@
 .contacts {
   margin: 0 auto;
+  padding-top: 42px;
   width: 320px;
   text-align: center;
 
@@ -7,6 +8,9 @@
 }
 
 .contacts__caption {
+  margin: 0;
+  padding: 0;
+
   color: $navy;
   font-size: 24px;
   line-height: 30px;
@@ -18,17 +22,28 @@
   flex-direction: column;
   justify-content: center;
   margin: 0;
+  padding-top: 10px;
 }
 
 .contacts__wrapper {
   margin: 0;
+  margin-top: 23px;
 }
 
 .contacts__title {
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
+
   color: $navy;
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
+}
+
+.contacts__adress {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .contacts__link,
@@ -50,23 +65,107 @@
   text-decoration: none;
 }
 
+.contacts__map {
+  overflow: hidden;
+  margin-top: 35px;
+  height: 200px;
+  position: relative;
+
+  &::after {
+    content: "";
+
+    display: block;
+    position: absolute;
+    top: 97px;
+    left: 142px;
+    width: 35px;
+    height: 35px;
+
+    background-image: url("../img/icon-map-marker.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+}
+
+.contacts__map-image {
+  margin-top: -445px;
+}
+
 @media (min-width: $tablet-width) {
   .contacts {
+    margin-bottom: 54px;
+    padding-top: 45px;
     width: 660px;
   }
 
   .contacts__container {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 0;
+    margin-top: 20px;
+  }
+
+  .contacts__wrapper-phone {
+    margin-left: 70px;
+    margin-right: auto;
+  }
+
+  .contacts__wrapper-mail {
+    margin-left: auto;
+    margin-right: 50px;
+  }
+
+  .contacts__wrapper-adress {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+
+  .contacts__caption {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .contacts__map {
+    min-height: 374px;
   }
 }
 
 @media (min-width: $desctop-width) {
   .contacts {
+    padding-top: 60px;
     width: 1200px;
   }
 
-  .contacts__wrapper--last {
+  .contacts__caption {
+    font-size: 50px;
+    line-height: 62px;
+  }
+
+  .contacts__wrapper {
+    margin-top: 38px;
+  }
+
+  .contacts__wrapper-phone {
+    margin-left: 180px;
+  }
+
+  .contacts__wrapper-mail {
+    margin-right: 160px;
     order: 2;
+  }
+
+  .contacts__wrapper-adress {
+    padding-left: 15px;
+  }
+
+  .contacts__title {
+    margin-bottom: 25px;
+  }
+
+  .contacts__map {
+    min-height: 502px;
   }
 }

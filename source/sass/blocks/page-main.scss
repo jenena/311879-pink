@@ -1,14 +1,19 @@
 .page-main {
-  margin: 0 auto;
+  margin: -69px auto 0;
+  padding-top: 98px;
   width: 320px;
-  height: 237px;
+  min-height: 141px;
   text-align: center;
 
   background-color: $navy;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .page-main__title {
-  margin: 0;
+  margin: 0 auto;
 
   color: #ffffff;
   font-size: 24px;
@@ -18,7 +23,9 @@
 
 @media (min-width: $tablet-width) {
   .page-main {
+    padding-top: 135px;
     width: 660px;
+    min-height: 263px;
   }
 
   .page-main__title {
@@ -29,6 +36,8 @@
 
 @media (min-width: $desctop-width) {
   .page-main {
+    padding-top: 130px;
     width: 1200px;
+    min-height: 223px;
   }
 }

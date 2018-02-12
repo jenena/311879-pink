@@ -1,6 +1,8 @@
 .download {
   margin: 0;
+  padding-top: 28px;
   width: 320px;
+  min-height: 243px;
 
   text-align: center;
 
@@ -8,6 +10,17 @@
 }
 
 .download__button {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: 15px;
+  width: 280px;
+  height: 55px;
+
+  background: transparent;
+  border: 3px solid #ffffff;
+  border-radius: 27px;
+
   color: #ffffff;
   font-size: 18px;
   line-height: 18px;
@@ -17,20 +30,76 @@
   &:hover,
   &:focus {
     color: $pink;
+    background-color: #ffffff;
   }
 
   &:active {
     color: rgba($pink, 0.3);
+    background-color: #ffffff;
   }
 }
 
 .download__os-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
+  margin: 32px auto 0;
+  padding: 0;
+  width: 205px;
 }
 
 .download__descriprion {
+  margin: 15px auto 0;
+  width: 240px;
+
   color: #ffffff;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
+}
+
+@media (min-width: $tablet-width) {
+  .download {
+    background-color: transparent;
+  }
+
+  .download__button {
+    margin: 0;
+    width: 300px;
+  }
+
+  .download__descriprion {
+    margin-left: 0;
+    margin-top: 30px;
+    width: 300px;
+
+    font-size: 18px;
+  }
+
+  .download__os-list {
+    margin-top: 45px;
+    margin-left: 47px;
+    width: 205px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .download {
+    padding-top: 50px;
+  }
+
+  .download__button {
+    font-size: 21px;
+  }
+
+  .download__descriprion {
+    margin-top: 47px;
+  }
+
+  .download__os-list {
+    margin-top: 72px;
+  }
 }
