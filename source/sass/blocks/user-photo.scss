@@ -160,10 +160,6 @@
     }
   }
 
-  .user-photo__text {
-    padding-left: 28px;
-  }
-
   .user-photo__container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -209,6 +205,7 @@
   }
 
   .user-photo__text {
+    padding-left: 28px;
     padding-right: 28px;
 
     &--panorama {
