@@ -1,6 +1,34 @@
 .copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
   color: $navy;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+}
+
+.copyright__text {
+  font-weight: 400;
+}
+
+.copyright__link {
+  display: block;
+  margin-left: 15px;
+  width: 27px;
+  height: 34px;
+
+  background-color: transparent;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/logo-htmlacademy.svg");
+}
+
+@media (min-width: $desctop-width) {
+  .copyright__text {
+    font-size: 18px;
+  }
 }

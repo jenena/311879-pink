@@ -1,18 +1,70 @@
 .user-photo {
   margin: 0 auto;
+  padding-top: 45px;
   width: 320px;
   text-align: center;
+}
+
+.user-photo__slogan {
+  margin: 0 auto 50px;
+  width: 250px;
+
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.user-photo__panorama {
+  margin: 0 auto;
+  position: relative;
+
+  &::before {
+    content: "Панорама дня";
+
+    display: block;
+    position: absolute;
+    padding: 6px 0;
+    top: 0;
+    right: 20px;
+    width: 140px;
+
+    background-color: $pink;
+
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+  }
+}
+
+.user-photo__post {
+  margin-top: 20px;
+}
+
+.user-photo__image {
+  margin: 0 auto;
 }
 
 .user-photo__wrapper {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   background-color: $light-grey;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  text-align: left;
+  width: 280px;
 
   color: $navy;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+}
+
+.user-photo__title {
+  margin: 0;
+  padding-left: 18px;
+  padding-top: 12px;
 }
 
 .user-photo__container {
@@ -31,34 +83,138 @@
   text-transform: uppercase;
 }
 
+.user-photo__text {
+  margin: 0;
+  padding-left: 18px;
+}
+
 .user-photo__likes {
+  margin: 0;
+  margin-top: 10px;
+  padding-left: 18px;
+
   color: $pink;
   font-size: 12px;
+  text-transform: uppercase;
+}
+
+.user-photo__like-button {
+  width: 13px;
+  height: 12px;
+  padding: 0;
+  margin-right: 15px;
+
+  background-image: url("../img/icon-heart.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
 }
 
 @media (min-width: $tablet-width) {
   .user-photo {
+    padding-top: 94px;
     width: 660px;
   }
 
-  .user-photo__wrapper--panorama {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  .user-photo__slogan {
+    margin-bottom: 75px;
+    width: 450px;
+
+    font-size: 18px;
   }
 
-  .user-photo__text--panorama {
-    order: 2;
+  .user-photo__panorama::before {
+    top: 57px;
+  }
+
+  .user-photo__title {
+    padding-left: 28px;
+    padding-top: 19px;
+  }
+
+  .user-photo__likes {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-left: 28px;
+    width: 244px;
+
+    &--panorama {
+      margin-top: 19px;
+      margin-right: 14px;
+      padding-left: 0;
+      width: 136px;
+    }
+  }
+
+  .user-photo__like-button {
+    margin-left: 18px;
+    margin-right: 4px;
+
+    &--panorama {
+      margin-right: 15px;
+    }
+  }
+
+  .user-photo__text {
+    padding-left: 28px;
   }
 
   .user-photo__container {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .user-photo__post {
     width: 300px;
   }
+
+  .user-photo__wrapper {
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 22px;
+    width: 300px;
+    min-height: 128px;
+
+    &--panorama {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-left: auto;
+      margin-right: auto;
+      width: 620px;
+      min-height: 92px;
+      padding-bottom: 24px;
+    }
+  }
+
+  // временно пока нет графики
+    .user-photo__image {
+      width: 300px;
+      height: 300px;
+
+      &--panorama {
+        height: 509px;
+        width: 100%;
+      }
+    }
+
+    .user-photo__text {
+      padding-right: 28px;
+
+      &--panorama {
+        order: 2;
+      }
+    }
 }
 
 @media (min-width: $desctop-width) {
@@ -66,7 +222,39 @@
     width: 1200px;
   }
 
+  .user-photo__slogan {
+    margin-bottom: 88px;
+    width: 575px;
+  }
+
+  .user-photo__panorama::before {
+    top: 54px;
+    right: 130px;
+  }
+
+  // временно пока нет графики
+  .user-photo__image {
+    height: 400px;
+
+    &--panorama {
+      height: 505px;
+    }
+  }
+
+  .user-photo__wrapper {
+
+    &--panorama {
+      width: 940px;
+      min-height: 68px;
+    }
+  }
+
+  .user-photo__post {
+    margin-top: 50px;
+  }
+
   .user-photo__container {
-    padding: 0 120px;
+    margin-top: 0;
+    padding: 0 130px;
   }
 }

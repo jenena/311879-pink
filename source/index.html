@@ -10,10 +10,10 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/80x25" width="80" height="25" alt="Pink">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="80" height="25" alt="Pink">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a class="site-list__link">Главная</a>
@@ -38,13 +38,13 @@
         <a class="download__button" href="#">Скачать приложение</a>
         <ul class="download__os-list">
           <li class="download__os-item">
-            <img class="download__os-image" src="http://placehold.it/60x60" width="60" height="60" alt="iPhone">
+            <img class="download__os-image" src="img/logo-apple.svg" width="47" height="56" alt="iPhone">
           </li>
           <li class="download__os-item">
-            <img class="download__os-image" src="http://placehold.it/60x60" width="60" height="60" alt="Android">
+            <img class="download__os-image" src="img/logo-android.svg" width="43" height="47" alt="Android">
           </li>
           <li class="download__os-item">
-            <img class="download__os-image" src="http://placehold.it/60x60" width="60" height="60" alt="Windows Phone">
+            <img class="download__os-image" src="img/logo-microsoft.svg" width="44" height="41" alt="Windows Phone">
           </li>
         </ul>
         <p class="download__descriprion">
@@ -54,12 +54,14 @@
     </section>
     <section class="info">
       <h2 class="visually-hidden">Преимущества</h2>
-      <p class="info__offer">
-        Устали от серости мегаполиса?
-      </p>
-      <p class="info__offer">
-        Нам есть, что вам предложить!
-      </p>
+      <div class="info__container">
+        <p class="info__offer">
+          Устали от серости мегаполиса?
+        </p>
+        <p class="info__offer">
+          Нам есть, что вам<br>предложить!
+        </p>
+      </div>
       <div class="info__wrapper">
         <ul class="info__list">
           <li class="info__item">
@@ -84,8 +86,8 @@
       </div>
       <div class="info__effect">
         <div class="info__effect-wrapper">
-          <p class="info__effect-title">Эффект на 24 часа!</p>
-          <p class="info__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <p class="info__effect-title">Эффект на&nbsp;24 часа!</p>
+          <p class="info__effect-description">Британские ученые провели исследования и доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
           <a class="info__learn" href="#">Узнать больше об исследовании</a>
         </div>
       </div>
@@ -104,11 +106,15 @@
             </p>
           </li>
         </ul>
-        <p class="reviews__toggles toggles">
-          <button class="toggles__button" type="button">1</button>
-          <button class="toggles__button" type="button">2</button>
-          <button class="toggles__button" type="button">3</button>
-        </p>
+        <div class="reviews__toggles">
+          <p class="reviews__toggles toggles">
+            <button class="toggles__button toggles__button--active" type="button"><span class="visually-hidden">1</span></button>
+            <button class="toggles__button" type="button"><span class="visually-hidden">2</span></button>
+            <button class="toggles__button" type="button"><span class="visually-hidden">3</span></button>
+          </p>
+        </div>
+        <button class="reviews__button reviews__button--back slider__button slider__button--back" type="button"><span class="visually-hidden">Назад</span></button>
+        <button class="reviews__button reviews__button--forward slider__button slider__button--forward" type="button"><span class="visually-hidden">Вперед</span></button>
       </div>
     </section>
     <section class="price">
@@ -181,11 +187,13 @@
           </td>
         </tr>
       </table>
-      <p class="price__toggles toggles">
-        <button class="toggles__button" type="button">1</button>
-        <button class="toggles__button" type="button">2</button>
-        <button class="toggles__button" type="button">3</button>
-      </p>
+      <div class="price__toggles">
+        <p class="toggles">
+          <button class="toggles__button" type="button"><span class="visually-hidden">1</span></button>
+          <button class="toggles__button toggles__button--active" type="button"><span class="visually-hidden">2</span></button>
+          <button class="toggles__button" type="button"><span class="visually-hidden">3</span></button>
+        </p>
+      </div>
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
@@ -193,19 +201,19 @@
         Остались вопросы?<br>Свяжитесь с нами!
       </p>
       <div class="contacts__container">
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper contacts__wrapper-phone">
           <h3 class="contacts__title">Звоните:</h3>
           <a class="contacts__link" href="tel:+78125556666">
           +7 (812) 555-66-66
           </a>
         </div>
-        <div class="contacts__wrapper contacts__wrapper--last">
+        <div class="contacts__wrapper contacts__wrapper-mail">
           <h3 class="contacts__title">Пишите:</h3>
           <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
           mail@htmlacademy.ru
           </a>
         </div>
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper contacts__wrapper-adress">
           <h3 class="contacts__title">Приезжайте в гости:</h3>
           <p class="contacts__adress">
             ул. Большая Конюшенная, 19/8
@@ -213,30 +221,39 @@
         </div>
       </div>
       <div class="contacts__map">
-        <img class="contacts__map-image" src="http://placehold.it/320x200" width="320" height="200" alt="ул. Большая Конюшенная, 19/8">
+        <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" width="320" height="200" alt="ул. Большая Конюшенная, 19/8">
       </div>
     </section>
-    <footer class="page-footer page-footer--index">
+    <footer class="page-footer">
       <a class="page-footer__logo">
-        <img class="page-footer__logo-image" src="http://placehold.it/150x40" width="150" height="40" alt="Pink">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="150" height="40" alt="Pink">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+            <a class="social__link social__link--twitter" href="#">
+              <span class="visually-hidden">Мы в Твиттере</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">Мы в Ютубе</a>
+            <a class="social__link social__link--youtube" href="#">
+              <span class="visually-hidden">Мы в Ютубе</span>
+            </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
