@@ -253,6 +253,7 @@
 
     &--cheer::before {
       background-image: url("../img/iphone-screen-1-desktop@1x.png");
+
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/iphone-screen-1-desktop@2x.png");
       }
@@ -260,6 +261,7 @@
 
     &--change::before {
       background-image: url("../img/iphone-screen-2-desktop@1x.png");
+
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/iphone-screen-2-desktop@2x.png");
       }
@@ -267,6 +269,7 @@
 
     &--friends::before {
       background-image: url("../img/iphone-screen-3-desktop@1x.png");
+
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/iphone-screen-3-desktop@2x.png");
       }

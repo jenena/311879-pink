@@ -424,12 +424,12 @@
       background-repeat: no-repeat;
     }
 
-    &--phone::after{
+    &--phone::after {
       background-image: url("../img/icon-phone.svg");
       background-size: 20px 19px;
     }
 
-    &--email::after{
+    &--email::after {
       background-image: url("../img/icon-mail.svg");
       background-size: 18px 13px;
     }
