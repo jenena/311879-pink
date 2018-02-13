@@ -17,10 +17,22 @@
   background-color: rgba($navy, 0.3);
   border: none;
   border-radius: 3px;
-}
 
-.toggles__button--active {
-  background-color: #ffffff;
-  box-shadow: 0 0 0 3px $navy;
-  border-radius: 6px;
+  &:hover,
+  &:focus {
+    background-color: rgba($navy, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($navy, 0.1);
+  }
+
+  &--active,
+  &--active:hover,
+  &--active:focus,
+  &--active:active {
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px $navy;
+    border-radius: 6px;
+  }
 }

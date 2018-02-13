@@ -44,10 +44,15 @@
 .contacts__adress {
   width: 280px;
   margin: 0 auto;
+
+  color: $pink;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
 }
 
 .contacts__link,
-.contacts__adress {
+.contacts__phone {
   color: $pink;
   font-size: 24px;
   line-height: 30px;
@@ -58,6 +63,11 @@
 .contacts__link:hover,
 .contacts__link:focus {
   color: $navy;
+
+  background: linear-gradient(to right, $navy, $navy 50%, $navy 50%);
+  background-repeat: repeat-x;
+  background-position: 0 26px;
+  background-size: 3px 2px;
 }
 
 .contacts__link:active {
@@ -76,8 +86,8 @@
 
     display: block;
     position: absolute;
-    top: 97px;
-    left: 142px;
+    top: 50% ;
+    left: 50%;
     width: 35px;
     height: 35px;
 
@@ -131,9 +141,13 @@
   .contacts__map {
     min-height: 374px;
   }
+
+  .contacts__map-image {
+    margin-top: -305px;
+  }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   .contacts {
     padding-top: 60px;
     width: 1200px;

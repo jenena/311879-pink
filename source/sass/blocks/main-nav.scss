@@ -1,6 +1,24 @@
 .main-nav {
   position: relative;
   text-align: center;
+
+  &::before {
+    content: "";
+
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 69px;
+    top: -69px;
+    left: 0;
+
+    background-color: $navy;
+    z-index: -1;
+  }
+
+  &--closed::before {
+    display: none;
+  }
 }
 
 .main-nav__list {
@@ -92,7 +110,14 @@
   }
 }
 
-@media (max-width: $desctop-width) {
+@media (max-width: $desktop-width) {
+  .main-nav {
+    &::before {
+      height: 110px;
+      top: -110px;
+    }
+  }
+
   .main-nav--closed .site-list {
     display: none;
   }
@@ -106,7 +131,7 @@
   }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   .main-nav__toggle {
     display: none;
   }

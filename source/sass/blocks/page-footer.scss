@@ -5,10 +5,10 @@
   padding-bottom: 40px;
   width: 320px;
   text-align: center;
-}
 
-.page-footer--index {
-  display: none;
+  &--index {
+    display: none;
+  }
 }
 
 .page-footer__social {
@@ -45,7 +45,7 @@
   }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   .page-footer {
     padding-left: 130px;
     padding-right: 130px;

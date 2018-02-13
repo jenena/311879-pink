@@ -10,9 +10,13 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="80" height="25" alt="Pink">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="80" height="25" alt="Pink">
+        </picture>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -62,32 +66,50 @@
             <div class="form__achievements-wrapper">
               <div class="form__achievements-extra-wrapper">
                 <div class="form__checkbox-wrapper">
-                  <input class="form__checkbox" type="checkbox"  name="shark" id="shark" checked>
-                  <label class="form__check-label" for="shark">Сделал селфи с акулой</label>
+                  <label class="form__check-label" for="shark">
+                    <input class="form__checkbox visually-hidden" type="checkbox"  name="shark" id="shark" checked>
+                    <span class="form__checkbox-indicator"></span>
+                    Сделал селфи с акулой
+                  </label>
                 </div>
                 <div class="form__checkbox-wrapper">
-                  <input class="form__checkbox" type="checkbox"  name="beach" id="beach" checked>
-                  <label class="form__check-label" for="beach">Обгорел на пляже</label>
-                </div>
-              </div>
-              <div class="form__achievements-extra-wrapper">
-                <div class="form__checkbox-wrapper">
-                  <input class="form__checkbox" type="checkbox"  name="chuck" id="chuck">
-                  <label class="form__check-label" for="chuck">Видел Чака Норриса</label>
-                </div>
-                <div class="form__checkbox-wrapper">
-                  <input class="form__checkbox" type="checkbox"  name="souvenirs" id="souvenirs">
-                  <label class="form__check-label" for="souvenirs">Накупил сувениров</label>
+                  <label class="form__check-label" for="beach">
+                    <input class="form__checkbox visually-hidden" type="checkbox"  name="beach" id="beach" checked>
+                    <span class="form__checkbox-indicator"></span>
+                    Обгорел на пляже
+                  </label>
                 </div>
               </div>
               <div class="form__achievements-extra-wrapper">
                 <div class="form__checkbox-wrapper">
-                  <input class="form__checkbox" type="checkbox"  name="tower" id="tower" checked>
-                  <label class="form__check-label" for="tower">Удержал башню</label>
+                  <label class="form__check-label" for="chuck">
+                    <input class="form__checkbox visually-hidden" type="checkbox"  name="chuck" id="chuck">
+                    <span class="form__checkbox-indicator"></span>
+                    Видел Чака Норриса
+                  </label>
                 </div>
                 <div class="form__checkbox-wrapper">
-                  <input class="form__checkbox" type="checkbox"  name="hotel" id="hotel">
-                  <label class="form__check-label" for="hotel">Разгромил отель</label>
+                  <label class="form__check-label" for="souvenirs">
+                    <input class="form__checkbox visually-hidden" type="checkbox"  name="souvenirs" id="souvenirs">
+                    <span class="form__checkbox-indicator"></span>
+                    Накупил сувениров
+                  </label>
+                </div>
+              </div>
+              <div class="form__achievements-extra-wrapper">
+                <div class="form__checkbox-wrapper">
+                  <label class="form__check-label" for="tower">
+                    <input class="form__checkbox visually-hidden" type="checkbox"  name="tower" id="tower" checked>
+                    <span class="form__checkbox-indicator"></span>
+                    Удержал башню
+                  </label>
+                </div>
+                <div class="form__checkbox-wrapper">
+                  <label class="form__check-label" for="hotel">
+                    <input class="form__checkbox visually-hidden" type="checkbox"  name="hotel" id="hotel">
+                    <span class="form__checkbox-indicator"></span>
+                    Разгромил отель
+                  </label>
                 </div>
               </div>
             </div>
@@ -99,11 +121,15 @@
             <div class="form__contacts-wrapper">
               <div class="form__field-wrapper form__field-wrapper--contacts">
                 <label class="form__field-label form__field-label--contacts" for="phone">Номер телефона</label>
-                <input class="form__field form__field--contacts" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+                <div class="form__contacts-container form__contacts-container--phone">
+                  <input class="form__field form__field--contacts" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+                </div>
               </div>
               <div class="form__field-wrapper form__field-wrapper--contacts">
                 <label class="form__field-label form__field-label--contacts" for="email">Адрес почты</label>
-                <input class="form__field form__field--contacts" id="email" type="email" name="email" placeholder="Введите почту *" required>
+                <div class="form__contacts-container form__contacts-container--email">
+                  <input class="form__field form__field--contacts" id="email" type="email" name="email" placeholder="Введите почту *" required>
+                </div>
               </div>
             </div>
           </fieldset>
@@ -112,16 +138,25 @@
               С каким приложением путешествовали?
             </legend>
             <div class="form__radio-wrapper">
-              <input type="radio" name="app" value="ios" id="ios" checked>
-              <label class="form__check-label" for="ios">Pink для iOS</label>
+              <label class="form__check-label" for="ios">
+                <input class="form__radio visually-hidden" type="radio" name="app" value="ios" id="ios" checked>
+                <span class="form__check-indicator"></span>
+                Pink для iOS
+              </label>
             </div>
             <div class="form__radio-wrapper">
-              <input type="radio" name="app" value="android" id="android">
-              <label class="form__check-label" for="android">Pink на Android</label>
+              <label class="form__check-label" for="android">
+                <input class="form__radio visually-hidden" type="radio" name="app" value="android" id="android">
+                <span class="form__check-indicator"></span>
+                Pink на Android
+              </label>
             </div>
             <div class="form__radio-wrapper">
-              <input type="radio" name="app" value="windows" id="windows">
-              <label class="form__check-label" for="windows">Windows Phone</label>
+              <label class="form__check-label" for="windows">
+                <input class="form__radio visually-hidden" type="radio" name="app" value="windows" id="windows">
+                <span class="form__check-indicator"></span>
+                Windows Phone
+              </label>
             </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--emotions">
@@ -137,7 +172,10 @@
     </section>
     <footer class="page-footer">
       <a class="page-footer__logo">
-        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="150" height="40" alt="Pink">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="150" height="40" alt="Pink">
+        </picture>
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
