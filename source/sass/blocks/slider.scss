@@ -10,3 +10,11 @@
   background-repeat: no-repeat;
   background-size: auto;
 }
+
+.slider__item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}

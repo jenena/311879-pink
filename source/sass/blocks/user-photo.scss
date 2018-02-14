@@ -42,6 +42,7 @@
 }
 
 .user-photo__image {
+  display: block;
   margin: 0 auto;
 }
 
@@ -64,7 +65,7 @@
 .user-photo__title {
   margin: 0;
   padding-left: 18px;
-  padding-top: 12px;
+  padding-top: 17px;
 }
 
 .user-photo__container {
@@ -131,7 +132,7 @@
 
   .user-photo__title {
     padding-left: 28px;
-    padding-top: 19px;
+    padding-top: 24px;
   }
 
   .user-photo__likes {
@@ -144,7 +145,7 @@
     width: 244px;
 
     &--panorama {
-      margin-top: 19px;
+      margin-top: 24px;
       margin-right: 14px;
       padding-left: 0;
       width: 136px;
@@ -179,7 +180,7 @@
     margin-right: 0;
     padding-bottom: 22px;
     width: 300px;
-    min-height: 128px;
+    min-height: 133px;
 
     &--panorama {
       flex-direction: row;
@@ -214,7 +215,7 @@
   }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   .user-photo {
     width: 1200px;
   }
@@ -246,7 +247,7 @@
   }
 
   .user-photo__post {
-    margin-top: 50px;
+    margin-top: 51px;
   }
 
   .user-photo__container {
