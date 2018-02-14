@@ -11,20 +11,22 @@
 }
 
 .copyright__text {
+  margin-right: 15px;
+
   font-weight: 400;
 }
 
-.copyright__link {
-  display: block;
-  margin-left: 15px;
-  width: 27px;
-  height: 34px;
+.copyright__icon {
+  fill: $pink;
 
-  background-color: transparent;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../img/logo-htmlacademy.svg");
+  &:hover,
+  &:focus {
+    fill: $navy;
+  }
+
+  &:active {
+    fill: rgba($navy, 0.3);
+  }
 }
 
 @media (min-width: $desktop-width) {

@@ -27,7 +27,7 @@
   margin: 0;
   padding: 84px 0 0;
 
-  // background-image: url("../img/bg-triangle-white.svg");
+  background-image: url("../img/bg-triangle-white.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -155,15 +155,33 @@
     background-color: #ffffff;
 
     &::before {
-      content: "";
+      content: "24";
 
       display: block;
-      width: 330px;
+      padding-top: 164px;
+      padding-left: 85px;
+      width: 245px;
+      text-align: left;
+
+      background-image: url("../img/icon-editor-diagram-fill.svg"),
+      url("../img/icon-timer.svg");
+      background-repeat: no-repeat,
+      no-repeat;
+      background-position: 39px 114px,
+      21px 59px;
+      background-size: auto 202px,
+      auto 276px;
+
+      font-size: 96px;
+      line-height: 96px;
+      font-weight: 700;
+      color: $pink;
     }
   }
 
   .info__effect-wrapper {
     margin-top: 96px;
+    padding-bottom: 40px;
     width: 330px;
     text-align: left;
   }
@@ -296,7 +314,19 @@
     background-color: $light-grey;
 
     &::before {
-      width: 370px;
+
+      display: block;
+      padding-top: 153px;
+      padding-left: 79px;
+      width: 285px;
+
+      background-position: 22px 93px,
+      0 25px;
+      background-size: auto 253px,
+      auto 345px;
+
+      font-size: 120px;
+      line-height: 120px;
     }
   }
 
