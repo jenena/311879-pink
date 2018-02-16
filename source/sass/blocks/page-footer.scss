@@ -11,6 +11,35 @@
   }
 }
 
+.page-footer__logo {
+  margin: 0 auto;
+  width: 150px;
+  height: 40px;
+}
+
+.page-footer__logo-image {
+  &--desktop {
+    display: none;
+  }
+}
+
+.page-footer__logo-image--text {
+  fill: $navy;
+}
+
+.page-footer__logo:hover .page-footer__logo-image--text,
+.page-footer__logo:focus .page-footer__logo-image--text {
+  fill: $pink;
+}
+
+.page-footer__logo:active {
+  opacity: 0.3;
+}
+
+.page-footer__logo:active .page-footer__logo-image--text {
+  fill: $navy;
+}
+
 .page-footer__social {
   margin: 32px 71px 0;
 }
@@ -30,6 +59,10 @@
     width: 620px;
   }
 
+  .page-footer__logo {
+    margin: 0;
+  }
+
   .page-footer__social {
     margin-top: 4px;
     margin-left: 71px;
@@ -37,7 +70,7 @@
   }
 
   .page-footer__copyright {
-    margin-top: 12px;
+    margin-top: 8px;
   }
 
   .page-footer--index {
@@ -54,7 +87,22 @@
     width: 940px;
   }
 
+  .page-footer__logo-image {
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+
   .page-footer__social {
     margin-left: 236px;
+  }
+
+  .page-footer__copyright {
+    margin-top: 7px;
+    margin-right: -6px;
   }
 }

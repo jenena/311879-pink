@@ -6,6 +6,10 @@
   text-align: center;
 
   background-color: $light-grey;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: contain;
 
   overflow: hidden;
 }

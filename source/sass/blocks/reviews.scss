@@ -63,7 +63,7 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    padding-top: 70px;
+    padding-top: 30px;
     padding-bottom: 20px;
     width: 660px;
   }
@@ -93,6 +93,7 @@
   .reviews {
     position: relative;
     padding-bottom: 2px;
+    padding-top: 70px;
     width: 1200px;
 
     &::before {
@@ -103,7 +104,10 @@
       width: 79px;
       height: 63px;
 
-      background-color: $light-grey;
+      background-image: url("../img/icon-quotes.svg");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: 79px 63px;
     }
   }
 
