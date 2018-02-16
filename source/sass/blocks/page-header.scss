@@ -32,7 +32,7 @@
 }
 
 .page-header__logo:hover .page-header__logo-image,
-.page-header__logo:focus .page-header__logo-image{
+.page-header__logo:focus .page-header__logo-image {
   fill: $pink;
 }
 
@@ -59,9 +59,7 @@
   .page-header__logo-image {
     width: 147px;
     height: 40px;
-  }
 
-  .page-header__logo-image {
     &--mobile {
       display: none;
     }
