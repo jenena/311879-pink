@@ -1,6 +1,7 @@
 .main-nav {
   position: relative;
   text-align: center;
+  width: 100%;
 
   &::before {
     content: "";
@@ -11,6 +12,7 @@
     height: 69px;
     top: -69px;
     left: 0;
+    right: 0;
 
     background-color: $navy;
     z-index: -1;
@@ -24,6 +26,12 @@
 .main-nav__list {
   margin: 0;
   padding: 0;
+}
+
+.main-nav__toggle-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
 }
 
 .main-nav__toggle {
@@ -131,8 +139,18 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .main-nav__toggle-wrapper {
+    width: 660px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__toggle-wrapper {
     display: none;
   }
 }

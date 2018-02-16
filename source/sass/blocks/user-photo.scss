@@ -75,7 +75,10 @@
 }
 
 .user-photo__user-name {
+  display: inline-block;
   font-weight: 700;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 .user-photo__time {
@@ -87,6 +90,7 @@
 .user-photo__text {
   margin: 0;
   padding-left: 18px;
+  width: 262px;
 }
 
 .user-photo__likes {
@@ -194,7 +198,6 @@
     }
   }
 
-  // временно пока нет графики
   .user-photo__image {
     width: 300px;
     height: 300px;
@@ -208,9 +211,11 @@
   .user-photo__text {
     padding-left: 28px;
     padding-right: 28px;
+    width: 244px;
 
     &--panorama {
       order: 2;
+      width: auto;
     }
   }
 }
@@ -230,7 +235,6 @@
     right: 130px;
   }
 
-  // временно пока нет графики
   .user-photo__image {
     height: 400px;
 

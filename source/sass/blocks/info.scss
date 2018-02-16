@@ -1,17 +1,35 @@
 .info {
+  width: 100%;
+
+  background-color: $light-grey;
+}
+
+.info__extra-wrapper {
+  background-image: url("../img/bg-triangle-white.svg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.info__section-wrapper {
   margin: 0 auto;
   padding-top: 0;
   width: 320px;
-  background-color: $light-grey;
-
   text-align: center;
 }
 
-.info__container {
-  margin: 0;
-  padding: 41px 0 8px;
+.info__container-wrapper {
+  position: relative;
+  width: 100%;
 
   background-color: #ffffff;
+}
+
+.info__container {
+  margin: 0 auto;
+  padding: 41px 0 8px;
+  width: 320px;
+  text-align: center;
 }
 
 .info__offer {
@@ -26,11 +44,6 @@
 .info__wrapper {
   margin: 0;
   padding: 84px 0 0;
-
-  background-image: url("../img/bg-triangle-white.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: 100%;
 
   &::after {
     content: "";
@@ -109,13 +122,14 @@
 }
 
 @media (min-width: $tablet-width) {
-  .info {
+  .info__section-wrapper {
     padding-top: 0;
     width: 660px;
   }
 
   .info__container {
     padding: 46px 0 44px;
+    width: 660px;
   }
 
   .info__offer {
@@ -149,10 +163,17 @@
   }
 
   .info__effect {
-    display: flex;
-    flex-direction: row;
+    display: block;
+    width: 100%;
 
     background-color: #ffffff;
+  }
+
+  .info__effect-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 660px;
 
     &::before {
       content: "24";
@@ -213,6 +234,7 @@
 
       display: block;
       width: 300px;
+      z-index: 2;
 
       background-image: url("../img/iphone-screen-3-tablet@1x.png");
       background-position: 50% 0;
@@ -231,18 +253,20 @@
 }
 
 @media (min-width: $desktop-width) {
-  .info {
-    width: 1200px;
-  }
-
   .info__container {
     padding-top: 65px;
     padding-bottom: 78px;
+    width: 1200px;
   }
 
   .info__offer {
     font-size: 50px;
     line-height: 61px;
+  }
+
+  .info__section-wrapper {
+    margin: 0 auto;
+    width: 1200px;
   }
 
   .info__list {
@@ -263,6 +287,7 @@
 
       margin-bottom: 54px;
       height: 300px;
+      z-index: 2;
 
       background-repeat: no-repeat;
       background-position: 50% 50%;
@@ -309,8 +334,6 @@
   }
 
   .info__effect {
-    padding-left: 130px;
-
     background-color: $light-grey;
 
     &::before {
@@ -328,6 +351,11 @@
       font-size: 120px;
       line-height: 120px;
     }
+  }
+
+  .info__effect-container {
+    padding-left: 130px;
+    width: 1070px;
   }
 
   .info__effect-wrapper {
