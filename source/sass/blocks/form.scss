@@ -142,6 +142,10 @@
   border-color: $pink;
 }
 
+.form__checkbox:disabled + .form__checkbox-indicator {
+  border-color: rgba($navy, 0.1);
+}
+
 .form__checkbox:checked + .form__checkbox-indicator::after {
   content: "";
 
@@ -178,8 +182,8 @@
   border-color: $pink;
 }
 
-.form__radio:checked + .form__check-indicator {
-  border-color: #e5e5e5;
+.form__radio:disabled + .form__check-indicator {
+  border-color: rgba($navy, 0.1);
 }
 
 .form__radio:checked + .form__check-indicator::after {

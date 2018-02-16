@@ -13,12 +13,16 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="80" height="25" alt="Pink">
-        </picture>
+      <a class="page-header__logo" href="index.html">
+        <svg class="page-header__logo-image page-header__logo-image--desktop" width="150" height="40">
+          <use xlink:href="img/sprite.svg#page-header__logo--desktop" class="page-header__logo-image"></use>
+        </svg>
+        <svg class="page-header__logo-image page-header__logo-image--tablet" width="150" height="40">
+          <use xlink:href="img/sprite.svg#page-header__logo--tablet" class="page-header__logo-image"></use>
+        </svg>
+        <svg class="page-header__logo-image page-header__logo-image--mobile" width="75" height="23">
+          <use xlink:href="img/sprite.svg#page-header__logo--mobile" class="page-header__logo-image"></use>
+        </svg>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -49,6 +53,12 @@
       <div class="user-photo__panorama">
         <a class="user-photo__link user-photo__link--panorama" href="#">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-desktop
+            @1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet
+            @1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/panorama-mobile
+            @1x.webp 1x, img/panorama-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
             <img class="user-photo__image user-photo__image--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография пользователя Анна">
@@ -72,6 +82,9 @@
         <div class="user-photo__post">
           <a class="user-photo__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
               <img class="user-photo__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография пользователя Левон">
@@ -94,6 +107,9 @@
         <div class="user-photo__post">
           <a class="user-photo__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
               <img class="user-photo__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография пользователя Антон">
@@ -116,6 +132,9 @@
         <div class="user-photo__post">
           <a class="user-photo__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
               <img class="user-photo__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография пользователя Борис">
@@ -138,6 +157,9 @@
         <div class="user-photo__post">
           <a class="user-photo__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
               <img class="user-photo__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография пользователя Сергей">
@@ -160,6 +182,9 @@
         <div class="user-photo__post">
           <a class="user-photo__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
               <img class="user-photo__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография пользователя Максим">
@@ -182,6 +207,9 @@
         <div class="user-photo__post">
           <a class="user-photo__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
               <img class="user-photo__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фотография пользователя Надежда">
@@ -211,6 +239,9 @@
       <div class="upload__container">
         <div class="upload__image-wrapper">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
             <img class="upload__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Загружаемая фотография">
@@ -218,9 +249,18 @@
         </div>
         <div class="upload__wrapper">
           <div class="upload__effect-wrapper">
-            <button class="upload__effect-button upload__effect-button--crop upload__effect-button--active" type="button"><span class="visually-hidden">Обрезать</span></button>
-            <button class="upload__effect-button upload__effect-button--fill" type="button"><span class="visually-hidden">Заполнить</span></button>
-            <button class="upload__effect-button upload__effect-button--contrast" type="button"><span class="visually-hidden">Контраст</span></button>
+            <button class="upload__effect-button upload__effect-button--crop upload__effect-button--active" type="button">
+              <span class="visually-hidden">Обрезать</span>
+              <svg class="upload__icon upload__icon--crop" width="48" height="48"><use xlink:href="img/sprite.svg#icon-editor-crop"></use></svg>
+            </button>
+            <button class="upload__effect-button upload__effect-button--fill" type="button">
+              <span class="visually-hidden">Заполнить</span>
+              <svg class="upload__icon upload__icon--fill" width="48" height="48"><use xlink:href="img/sprite.svg#icon-editor-fill"></use></svg>
+            </button>
+            <button class="upload__effect-button upload__effect-button--contrast" type="button">
+              <span class="visually-hidden">Контраст</span>
+              <svg class="upload__icon upload__icon--contrast" width="48" height="48"><use xlink:href="img/sprite.svg#icon-editor-contrast"></use></svg>
+            </button>
           </div>
           <div class="upload__scale-wrapper">
             <input class="upload__scale upload__scale--crop upload__scale--active" type="range" min="1" max="10" value="8" step="0.5">
@@ -235,27 +275,34 @@
       </div>
     </section>
     <footer class="page-footer">
-      <a class="page-footer__logo">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
-          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="150" height="40" alt="Pink">
-        </picture>
+      <a class="page-footer__logo" href="index.html">
+        <svg class="page-footer__logo-image page-footer__logo-image--desktop" width="150" height="40">
+          <use xlink:href="img/sprite.svg#page-footer__logo-glasses--desktop" class="page-footer__logo-image--glasses"></use>
+          <use xlink:href="img/sprite.svg#page-footer__logo-text--desktop" class="page-footer__logo-image--text"></use>
+        </svg>
+        <svg class="page-footer__logo-image page-footer__logo-image--mobile" width="150" height="40">
+          <use xlink:href="img/sprite.svg#page-footer__logo-glasses--mobile" class="page-footer__logo-image--glasses"></use>
+          <use xlink:href="img/sprite.svg#page-footer__logo-text--mobile" class="page-footer__logo-image--text"></use>
+        </svg>
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="#">
               <span class="visually-hidden">Мы в Твиттере</span>
+              <svg class="social__icon social__icon--twitter" width="18" height="18"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Мы в Фейсбуке</span>
+              <svg class="social__icon social__icon--facebook" width="9" height="18"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="#">
               <span class="visually-hidden">Мы в Ютубе</span>
+              <svg class="social__icon social__icon--youtube" width="15" height="14"><use xlink:href="img/sprite.svg#icon-youtube"></use></svg>
             </a>
           </li>
         </ul>
@@ -264,6 +311,7 @@
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">HTML Academy</span>
+          <svg class="copyright__icon" width="40" height="40"><use xlink:href="img/sprite.svg#logo-htmlacademy"></use></svg>
         </a>
       </div>
     </footer>

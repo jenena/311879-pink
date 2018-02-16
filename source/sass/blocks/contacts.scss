@@ -98,26 +98,12 @@
   overflow: hidden;
   height: 200px;
   position: relative;
-
-  &::after {
-    content: "";
-
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 35px;
-    height: 35px;
-
-    background-image: url("../img/icon-map-marker.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
+  text-align: center;
 }
 
-.contacts__map-image {
-  margin-top: -445px;
+.contacts__map iframe {
+  width: 100%;
+  height: 200px;
 }
 
 @media (min-width: $tablet-width) {
@@ -166,8 +152,8 @@
     min-height: 374px;
   }
 
-  .contacts__map-image {
-    margin-top: -305px;
+  .contacts__map iframe {
+    height: 374px;
   }
 }
 
@@ -215,5 +201,9 @@
 
   .contacts__map {
     min-height: 502px;
+  }
+
+  .contacts__map iframe {
+    height: 502px;
   }
 }

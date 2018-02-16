@@ -4,11 +4,14 @@
   width: 22px;
   height: 41px;
 
-  background-color: $light-grey;
+  background-color: transparent;
   border: none;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: auto;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
 }
 
 .slider__item {
@@ -16,5 +19,18 @@
 
   &--active {
     display: flex;
+  }
+}
+
+.slider__arrow {
+  fill: rgba($navy, 0.3);
+
+  &:hover,
+  &:focus {
+    fill: rgba($navy, 0.6);
+  }
+
+  &:active {
+    fill: rgba($navy, 0.1);
   }
 }
