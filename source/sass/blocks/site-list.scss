@@ -33,6 +33,7 @@
 @media (min-width: $desktop-width) {
   .site-list {
     display: flex;
+    justify-content: flex-end;
     flex-direction: row;
     flex-wrap: wrap;
 

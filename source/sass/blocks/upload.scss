@@ -16,6 +16,7 @@
   padding-top: 45px;
   padding-bottom: 43px;
   margin: 0 auto;
+  width: 320px;
 
   font-size: 14px;
   line-height: 30px;
@@ -279,6 +280,7 @@
   .upload__title {
     padding-top: 66px;
     padding-bottom: 69px;
+    width: auto;
 
     font-size: 18px;
   }
@@ -300,6 +302,7 @@
   }
 
   .upload__wrapper {
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -308,11 +311,46 @@
     padding-left: 12px;
     padding-right: 0;
     width: 288px;
+
+    &::after {
+      content: "";
+
+      display: block;
+      position: absolute;
+      width: 275px;
+      height: 1px;
+      right: -10px;
+      top: 200px;
+
+      background-color: rgba($navy, 0.1);
+    }
   }
 
   .upload__scale-wrapper {
+    position: relative;
     padding: 0;
     padding-right: 6px;
+
+    &::before,
+    &::after {
+      content: "";
+
+      display: block;
+      position: absolute;
+      width: 275px;
+      height: 1px;
+      right: -10px;
+
+      background-color: rgba($navy, 0.1);
+    }
+
+    &::before {
+      top: 54px;
+    }
+
+    &::after {
+      top: 128px;
+    }
   }
 
   .upload__scale {
@@ -386,6 +424,10 @@
   .upload__button-wrapper {
     margin-top: 60px;
     padding-left: 20px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .upload__button {
@@ -415,17 +457,39 @@
     padding-left: 210px;
     padding-right: 190px;
     padding-top: 54px;
-    padding-bottom: 52px;
+    padding-bottom: 54px;
     width: 800px;
   }
 
   .upload__image {
     margin-top: 3px;
-    margin-right: 110px; //исправить на 90 потом
+    margin-right: 110px;
   }
 
   .upload__scale-wrapper {
+    position: relative;
     padding-right: 28px;
+
+    &::before,
+    &::after {
+      content: "";
+
+      display: block;
+      position: absolute;
+      width: 410px;
+      height: 1px;
+      right: 0;
+
+      background-color: rgba($navy, 0.1);
+    }
+
+    &::before {
+      top: 58px;
+    }
+
+    &::after {
+      top: 132px;
+    }
   }
 
   .upload__scale {
@@ -437,9 +501,23 @@
   }
 
   .upload__wrapper {
+    position: relative;
     margin-left: 0;
     padding-left: 0;
     width: 410px;
+
+    &::after {
+      content: "";
+
+      display: block;
+      position: absolute;
+      width: 410px;
+      height: 1px;
+      top: 202px;
+      right: 0;
+
+      background-color: rgba($navy, 0.1);
+    }
   }
 
   .upload__effect-wrapper {
