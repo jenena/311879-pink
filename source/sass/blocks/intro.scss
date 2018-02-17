@@ -58,11 +58,10 @@
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: auto 462px;
-    background-position: 50% 0;
+    background-position: 50% top;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: auto, 462px;
     }
   }
 }
@@ -82,9 +81,9 @@
   }
 
   .intro__wrapper {
-    padding-left: 20px;
+    padding-left: 10px;
     padding-top: 200px;
-    width: 620px;
+    width: 630px;
     min-height: 529px;
 
     background-image: url("../img/iphone-hand-tablet@1x.png");

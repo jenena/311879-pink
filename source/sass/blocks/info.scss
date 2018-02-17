@@ -155,6 +155,7 @@
 
   .info__item {
     margin-bottom: 37px;
+    text-align: left;
   }
 
   .info__description {
@@ -246,10 +247,6 @@
       }
     }
   }
-
-  .info__item {
-    text-align: left;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -281,6 +278,7 @@
     flex-direction: column;
     padding: 0 40px;
     width: 240px;
+    text-align: center;
 
     &::before {
       content: "";
@@ -335,10 +333,14 @@
 
   .info__effect {
     background-color: $light-grey;
+  }
+
+  .info__effect-container {
+    justify-content: space-between;
+    padding-left: 130px;
+    width: 1070px;
 
     &::before {
-
-      display: block;
       padding-top: 153px;
       padding-left: 79px;
       width: 285px;
@@ -353,13 +355,9 @@
     }
   }
 
-  .info__effect-container {
-    padding-left: 130px;
-    width: 1070px;
-  }
-
   .info__effect-wrapper {
     margin-top: 115px;
+    margin-right: 176px;
     padding-bottom: 113px;
     width: 530px;
   }

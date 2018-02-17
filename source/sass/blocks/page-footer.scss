@@ -41,11 +41,11 @@
 }
 
 .page-footer__social {
-  margin: 32px 71px 0;
+  margin: 40px 71px 0;
 }
 
 .page-footer__copyright {
-  margin-top: 38px;
+  margin-top: 36px;
 }
 
 @media (min-width: $tablet-width) {
@@ -70,7 +70,7 @@
   }
 
   .page-footer__copyright {
-    margin-top: 8px;
+    margin-top: 10px;
   }
 
   .page-footer--index {
@@ -99,10 +99,5 @@
 
   .page-footer__social {
     margin-left: 236px;
-  }
-
-  .page-footer__copyright {
-    margin-top: 7px;
-    margin-right: -6px;
   }
 }
