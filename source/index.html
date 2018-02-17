@@ -5,11 +5,15 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="js/script.min.js" as="script">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
     <script>
       document.createElement( "picture" );
     </script>
-    <script src="js/picturefill.js" async></script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <div style="display:none">
@@ -290,7 +294,7 @@
         <div class="contacts__wrapper contacts__wrapper-adress">
           <h3 class="contacts__title">Приезжайте в гости:</h3>
           <p class="contacts__adress">
-            ул. Большая Конюшенная, 19/8ул. Большая Конюшенная, 19/8
+            ул. Большая Конюшенная, 19/8
           </p>
         </div>
       </div>
