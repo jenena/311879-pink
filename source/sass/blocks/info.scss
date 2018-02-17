@@ -336,6 +336,10 @@
   }
 
   .info__effect-container {
+    justify-content: space-between;
+    padding-left: 130px;
+    width: 1070px;
+
     &::before {
       padding-top: 153px;
       padding-left: 79px;
@@ -349,12 +353,6 @@
       font-size: 120px;
       line-height: 120px;
     }
-  }
-
-  .info__effect-container {
-    justify-content: space-between;
-    padding-left: 130px;
-    width: 1070px;
   }
 
   .info__effect-wrapper {
