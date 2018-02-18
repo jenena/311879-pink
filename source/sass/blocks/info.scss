@@ -211,7 +211,7 @@
   .info__effect-title {
     margin: 0;
     padding: 0;
-    width: 168px;
+    width: 170px;
   }
 
   .info__effect-description {
@@ -253,7 +253,7 @@
   .info__container {
     padding-top: 65px;
     padding-bottom: 78px;
-    width: 1200px;
+    width: 960px;
   }
 
   .info__offer {
@@ -263,12 +263,12 @@
 
   .info__section-wrapper {
     margin: 0 auto;
-    width: 1200px;
+    width: 960px;
   }
 
   .info__list {
     margin-top: 0;
-    padding: 0 120px;
+    padding: 0;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -337,8 +337,8 @@
 
   .info__effect-container {
     justify-content: space-between;
-    padding-left: 130px;
-    width: 1070px;
+    padding-left: 10px;
+    width: 950px;
 
     &::before {
       padding-top: 153px;
@@ -357,7 +357,7 @@
 
   .info__effect-wrapper {
     margin-top: 115px;
-    margin-right: 176px;
+    margin-right: 55px;
     padding-bottom: 113px;
     width: 530px;
   }
