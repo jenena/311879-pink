@@ -51,6 +51,7 @@
 
 .form__achievements-wrapper {
   padding-left: 50px;
+  clear: both;
 }
 
 .form__achievements-extra-wrapper:last-of-type .form__checkbox-wrapper:last-of-type {
@@ -96,6 +97,7 @@
   margin: 0 25px 45px;
   padding: 0;
   width: 230px;
+  clear: both;
 
   color: $pink;
   line-height: 18px;
@@ -201,6 +203,7 @@
 .form__radio-wrapper {
   margin-bottom: 43px;
   padding-left: 70px;
+  clear: both;
 
   &:last-of-type {
     margin-bottom: 0;
