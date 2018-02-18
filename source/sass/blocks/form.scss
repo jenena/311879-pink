@@ -1,4 +1,5 @@
 .form {
+  position: relative;
   margin: 0 auto 41px;
   width: 320px;
   background-color: #ffffff;
@@ -15,6 +16,10 @@
   text-align: center;
 }
 
+  .form__subtitle {
+    display: none;
+  }
+
 .form__container {
   display: flex;
   flex-direction: column;
@@ -26,6 +31,10 @@
   padding: 0 20px;
   width: 280px;
   border: none;
+
+  &--grey {
+    background-color: $light-grey;
+  }
 
   &--achievements {
     padding-top: 38px;
@@ -72,6 +81,7 @@
   padding-bottom: 14px;
   padding-left: 20px;
   width: 256px;
+  height: 30px;
 
   border: 2px solid #e5e5e5;
   border-radius: 2px;
@@ -102,8 +112,12 @@
   line-height: 18px;
   text-transform: uppercase;
 
+  &--contacts {
+    display: none;
+  }
+
   &--radio {
-    margin-bottom: 42px;
+    margin-bottom: 40px;
   }
 
   &--emotions {
@@ -217,6 +231,7 @@
   padding: 16px 20px;
   width: 236px;
   min-height: 165px;
+  resize: vertical;
 
   border: 2px solid #e5e5e5;
   border-radius: 2px;
@@ -276,20 +291,6 @@
   display: none;
 }
 
-@media (max-width: $tablet-width) {
-  .form__subtitle {
-    display: none;
-  }
-
-  .form__legend--contacts {
-    display: none;
-  }
-
-  .form__fieldset--grey {
-    background-color: $light-grey;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .form {
     margin-bottom: 48px;
@@ -303,6 +304,7 @@
   }
 
   .form__subtitle {
+    display: inline;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -319,6 +321,10 @@
     width: 616px;
 
     border: 2px solid #e5e5e5;
+
+    &--grey {
+      background-color: #ffffff;
+    }
 
     &--name {
       width: 620px;
@@ -339,7 +345,7 @@
 
     &--achievements {
       order: 4;
-      margin: 0 20px 58px;
+      margin: 0 20px 56px;
       padding: 0;
     }
 
@@ -385,6 +391,8 @@
   .form__legend {
     float: none;
     width: auto;
+    margin-left: auto;
+    margin-right: auto;
 
     &--radio {
       margin: 0 auto 50px;
@@ -393,6 +401,7 @@
     }
 
     &--contacts {
+      display: block;
       margin-bottom: 32px;
       padding-left: 30px;
       padding-right: 30px;
@@ -489,17 +498,17 @@
 @media (min-width: $desktop-width) {
   .form {
     margin-bottom: 68px;
-    width: 1200px;
+    width: 960px;
   }
 
   .form__title {
-    padding: 93px 220px 0;
+    padding: 93px 100px 0;
   }
 
   .form__container {
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 70px 130px 0;
+    padding: 70px 10px 0;
     width: 940px;
   }
 
@@ -524,7 +533,7 @@
 
     &--contacts {
       margin: 0;
-      margin-top: 12px;
+      margin-top: 10px;
       width: 940px;
     }
 
@@ -601,7 +610,7 @@
 
   .form__wrapper {
     margin: 56px auto 0;
-    padding: 0 130px;
+    padding: 0 10px;
     width: 940px;
   }
 

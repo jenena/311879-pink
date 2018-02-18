@@ -1,0 +1,154 @@
+.modal {
+  display: none;
+  z-index: 10;
+  position: absolute;
+  left: calc(50% - 160px);
+  margin: 0;
+  padding-top: 40px;
+  width: 320px;
+  text-align: center;
+
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 rgba(#000101, 0.15);
+
+  &--success {
+    top: 1404px;
+  }
+
+  &--fail {
+    top: 929px;
+  }
+}
+
+.modal__title {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.modal__text {
+  margin: 0;
+  margin-top: 26px;
+  padding: 0 20px;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: $navy;
+}
+
+.modal__button-wrapper {
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  width: 100%;
+  text-align: center;
+
+  background-color: $light-grey;
+}
+
+.modal__button {
+  margin-top: 38px;
+  margin-bottom: 50px;
+  padding: 17px 0;
+  width: 280px;
+  text-align: center;
+
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 2px;
+
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Open Sans", "Arial", sans-serif;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    background-color: #1c9b5e;
+
+    color: rgba(#ffffff, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    left: calc(50% - 230px);
+    padding-top: 36px;
+    width: 460px;
+
+    &--success {
+      top: 943px;
+    }
+
+    &--fail {
+      top: 469px;
+    }
+  }
+
+  .modal__title {
+    padding: 0 120px;
+
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal__text {
+    margin-top: 23px;
+    padding: 0 75px;
+
+    font-size: 18px;
+  }
+
+  .modal__button-wrapper {
+    margin-top: 32px;
+    padding-top: 12px;
+  }
+
+  .modal__button {
+    margin-top: 36px;
+    margin-bottom: 52px;
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal {
+    &--success {
+      top: 880px;
+      left: calc(50% - 390px);
+      padding-top: 41px;
+      width: 780px;
+    }
+
+    &--fail {
+      top: 429px;
+    }
+  }
+
+  .modal__text--sucess {
+    padding: 0 200px;
+  }
+
+  .modal__button-wrapper {
+    margin-top: 38px;
+  }
+
+  .modal__button {
+    &--success {
+      width: 460px;
+    }
+  }
+}
